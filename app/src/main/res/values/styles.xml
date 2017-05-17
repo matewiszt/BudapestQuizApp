@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:layout_marginBottom">@dimen/default_margin</item>
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:textSize">@dimen/title_size</item>
+    </style>
+
+    <style name="ImageStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:layout_marginBottom">@dimen/default_margin</item>
+    </style>
+
+    <style name="InstructionStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:layout_marginBottom">@dimen/default_margin</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:textSize">@dimen/instruct_size</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MoreButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

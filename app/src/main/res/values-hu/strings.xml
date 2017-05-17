@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Budapest Quiz App</string>
+    <string-array name="answer1">
+        <item>Duna</item>
+        <item>Volga</item>
+        <item>Spree</item>
+        <item>Tisza</item>
+    </string-array>
+    <string-array name="answer2">
+        <item>kb. 750.000</item>
+        <item>kb. 1.250.000</item>
+        <item>kb. 2.000.000</item>
+        <item>kb. 3.500.000</item>
+    </string-array>
+    <string-array name="answer3">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="answer4">
+        <item>kb. 75%</item>
+        <item>kb. 100%</item>
+        <item>kb. 120%</item>
+        <item>kb. 135%</item>
+    </string-array>
+    <string-array name="answer5">
+        <item>a Hradzsin</item>
+        <item>A pisilő kisfiú</item>
+        <item>a Prater</item>
+        <item>a Halászbástya</item>
+    </string-array>
+    <string-array name="answer6">
+        <item>12</item>
+        <item>8</item>
+        <item>6</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="answer7">
+        <item>1012</item>
+        <item>1873</item>
+        <item>1799</item>
+        <item>1453</item>
+    </string-array>
+
+    <string name="answers">A válaszaid:</string>
+    <string name="dear">Kedves</string>
+    <string name="emailSub">BudapestQuizApp eredményem</string>
+    <string name="getResults">Eredmény</string>
+    <string name="instruction">Válaszolj a következő kérdésekre, hogy megtudd, mennyit tudsz a magyar fővárosról!</string>
+    <string name="name_instruction">Írd be a neved!</string>
+    <string name="new_question">Új kérdés</string>
+    <string name="playAgain">Új játék</string>
+    <string name="points">jó válaszod van</string>
+    <string name="question">Kérdés</string>
+    <string-array name="question">
+        <item>Melyik folyó szeli át Budapestet?</item>
+        <item>Mekkora Budapest lakossága?</item>
+        <item>Hány metróvonal van Budapesten?</item>
+        <item>Mekkora Budapest életszínvonala az uniós átlaghoz képest?</item>
+        <item>A következők közül melyik egy híres budapesti látnivaló?</item>
+        <item>Hány Duna-híd található Budapesten?</item>
+        <item>Mikor alapították Budapestet (a jelenlegi formájában)?</item>
+    </string-array>
+    <string name="results">Az eredményeid</string>
+    <string name="rightAnswerText">és ez a jó válasz</string>
+    <string name="send">Küldés</string>
+    <string name="sendInstruction">Küldd el az eredményedet e-mailben</string>
+    <string name="start">Indít</string>
+    <string name="toast">Legalább egy választ meg kell jelölnöd</string>
+    <string name="welcome">Üdvözlünk a Budapest Quiz Appban!</string>
+    <string name="wrongAnswerText">a jó válasz:</string>
+    <string name="youHave"></string>
+    <string name="yourEmail">E-mail címed</string>
+    <string name="yourName">Neved</string>
+    <string name="acceptTerms">El kell fogadnod a feltételeket!</string>
+    <string name="checkboxText">Elfogadom a feltételeket</string>
+    <string name="withName">Névvel</string>
+    <string name="withoutName">Név nélkül</string>
+</resources>

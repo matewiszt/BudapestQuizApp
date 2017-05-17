@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/default_margin">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/TitleStyle"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/image"
+            style="@style/ImageStyle"
+            android:layout_height="180dp"
+            android:src="@drawable/bazilika" />
+
+        <TextView
+            android:id="@+id/questionTextView"
+            style="@style/InstructionStyle"
+            android:text="" />
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/answer1"
+                    style="@style/ButtonStyle"
+                    android:onClick="tapAnswer1"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/answer2"
+                    style="@style/ButtonStyle"
+                    android:onClick="tapAnswer2"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/answer3"
+                    style="@style/ButtonStyle"
+                    android:onClick="tapAnswer3"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/answer4"
+                    style="@style/ButtonStyle"
+                    android:onClick="tapAnswer4"
+                    android:text="" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/moreButton"
+            style="@style/MoreButtonStyle"
+            android:onClick="newQuestion"
+            android:paddingLeft="@dimen/default_margin"
+            android:paddingRight="@dimen/default_margin"
+            android:text="@string/new_question" />
+
+        <LinearLayout
+            android:id="@+id/sendLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/InstructionStyle"
+                android:text="@string/sendInstruction" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:checkedButton="@+id/radio1"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/withoutName"
+                    android:textAlignment="center"
+                    android:onClick="checkRadio"/>
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/withName"
+                    android:textAlignment="center"
+                    android:onClick="checkRadio"/>
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/yourName"
+                android:visibility="gone"/>
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/yourEmail" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkboxText" />
+
+            <Button
+                android:id="@+id/sendButton"
+                style="@style/MoreButtonStyle"
+                android:onClick="sendResults"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"
+                android:text="@string/send" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
