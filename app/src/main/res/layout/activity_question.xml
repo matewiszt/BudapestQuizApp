@@ -1,68 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="@dimen/default_margin">
 
         <TextView
             android:id="@+id/titleTextView"
             style="@style/TitleStyle"
-            android:text="" />
+            tools:text="@string/question" />
 
         <ImageView
             android:id="@+id/image"
             style="@style/ImageStyle"
             android:layout_height="180dp"
-            android:src="@drawable/bazilika" />
+            tools:src="@drawable/bazilika" />
 
         <TextView
             android:id="@+id/questionTextView"
             style="@style/InstructionStyle"
-            android:text="" />
+            tools:text="Which river flows through Budapest?" />
 
-        <TableLayout
-            android:id="@+id/table"
+        <LinearLayout
+            android:id="@+id/answerContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:stretchColumns="1">
+            android:orientation="vertical">
 
-            <TableRow>
+            <EditText
+                android:id="@+id/textAnswer"
+                android:inputType="textCapWords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
 
-                <Button
+            <LinearLayout
+                android:id="@+id/checkGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/check1"
+                    style="@style/ButtonStyle"
+                    tools:text="Answer 1" />
+
+                <CheckBox
+                    android:id="@+id/check2"
+                    style="@style/ButtonStyle"
+                    tools:text="Answer 2" />
+
+                <CheckBox
+                    android:id="@+id/check3"
+                    style="@style/ButtonStyle"
+                    tools:text="Answer 3" />
+
+                <CheckBox
+                    android:id="@+id/check4"
+                    style="@style/ButtonStyle"
+                    tools:text="Answer 4" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
                     android:id="@+id/answer1"
                     style="@style/ButtonStyle"
-                    android:onClick="tapAnswer1"
-                    android:text="" />
+                    tools:text="Answer 1" />
 
-                <Button
+                <RadioButton
                     android:id="@+id/answer2"
                     style="@style/ButtonStyle"
-                    android:onClick="tapAnswer2"
-                    android:text="" />
-            </TableRow>
+                    tools:text="Answer 2" />
 
-            <TableRow>
-
-                <Button
+                <RadioButton
                     android:id="@+id/answer3"
                     style="@style/ButtonStyle"
-                    android:onClick="tapAnswer3"
-                    android:text="" />
+                    tools:text="Answer 3" />
 
-                <Button
+                <RadioButton
                     android:id="@+id/answer4"
                     style="@style/ButtonStyle"
-                    android:onClick="tapAnswer4"
-                    android:text="" />
-            </TableRow>
+                    tools:text="Answer 4" />
 
-        </TableLayout>
+            </RadioGroup>
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/moreButton"
@@ -83,47 +118,20 @@
                 style="@style/InstructionStyle"
                 android:text="@string/sendInstruction" />
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:checkedButton="@+id/radio1"
-                android:layout_marginTop="@dimen/default_margin"
-                android:layout_marginBottom="@dimen/default_margin">
-
-                <RadioButton
-                    android:id="@+id/radio1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/withoutName"
-                    android:textAlignment="center"
-                    android:onClick="checkRadio"/>
-
-                <RadioButton
-                    android:id="@+id/radio2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/withName"
-                    android:textAlignment="center"
-                    android:onClick="checkRadio"/>
-
-            </RadioGroup>
-
             <EditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/yourName"
-                android:visibility="gone"/>
+                android:inputType="textPersonName"/>
 
 
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/yourEmail" />
+                android:hint="@string/yourEmail"
+                android:inputType="textEmailAddress" />
 
             <CheckBox
                 android:id="@+id/checkbox"
